@@ -1,0 +1,9 @@
+,Metric,Value
+0,R² Score,0.1415
+1,Mean Absolute Error,6.80 minutes
+2,Median Absolute Error,5.88 minutes
+3,Standard Deviation of Error,8.53 minutes
+4,Accuracy within ±10 minutes,76.39%
+5,Accuracy within ±15 minutes,91.84%
+6,Maximum Error,32.70 minutes
+7,Minimum Error,0.03 minutes
