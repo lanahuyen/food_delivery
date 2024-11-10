@@ -98,6 +98,23 @@ Our new dashboard provides real-time delivery predictions through an intuitive i
     ```bash
     streamlit run src/delivery_dashboard.py
     ```
+
+
+### Making Predictions
+1. Enter delivery distance
+2. Select restaurant type
+3. Choose current conditions (weather, traffic)
+4. Select time of day
+5. Click "Calculate Delivery Time"
+
+## Model Details
+
+### Machine Learning Model
+- Algorithm: XGBoost Regressor
+- Features: Distance, weather conditions, traffic density
+- Target: Delivery duration in minutes
+- Validation: 5-fold cross-validation
+- Metrics: RMSE, MAE, R²
 ## Results
 
 ### Model Performance
@@ -168,22 +185,6 @@ Our new dashboard provides real-time delivery predictions through an intuitive i
    - Vehicle type considerations
 """
 
-### Making Predictions
-1. Enter delivery distance
-2. Select restaurant type
-3. Choose current conditions (weather, traffic)
-4. Select time of day
-5. Click "Calculate Delivery Time"
-
-## Model Details
-
-### Machine Learning Model
-- Algorithm: XGBoost Regressor
-- Features: Distance, weather conditions, traffic density
-- Target: Delivery duration in minutes
-- Validation: 5-fold cross-validation
-- Metrics: RMSE, MAE, R²
-
 ### Industry Standards Integration
 - Restaurant-specific preparation times
 - Peak hour adjustments
@@ -194,20 +195,7 @@ Our new dashboard provides real-time delivery predictions through an intuitive i
 - Historical delivery data
 - Weather records
 - Traffic patterns
-- Restaurant preparation time standards
-
-## Results
-
-### Model Performance
-- RMSE: X minutes
-- MAE: Y minutes
-- R² Score: Z
-
-### Key Insights
-- Distance is the strongest predictor
-- Weather impacts vary by condition
-- Peak hours show consistent patterns
-- Traffic has multiplicative effects
+- Restaurant preparation data
 
 # Write the README content to a file
 with open('README.md', 'w') as f:
